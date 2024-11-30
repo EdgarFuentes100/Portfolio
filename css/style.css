@@ -58,7 +58,6 @@ nav a {
     text-decoration: none;
     color: white;
     padding: 8px;
-    transition: background 0.3s ease;
 }
 
 /* Estilo al pasar el mouse por encima */
@@ -355,7 +354,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     justify-content: flex-start;
-    width: 65%;
+    width: 70%;
 }
 
 .nueva-seccion h2 {
@@ -418,6 +417,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .habilidades-grid {
+        grid-template-columns: 1fr; /* Asegura que solo haya una columna en pantallas pequeñas */
+    }
 
     .contenido-adicional,
     .nueva-seccion {
@@ -501,10 +503,11 @@ footer {
 }
 
 /* Disposición de las habilidades técnicas en una grilla */
+/* Estilos para la grilla de habilidades */
 .habilidades-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* Adaptable a diferentes pantallas */
+    /* Esto hará que las columnas sean flexibles, ocupando el espacio disponible */
     gap: 20px;
 }
 
