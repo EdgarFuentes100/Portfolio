@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
-    <title>Ejemplo de Sección HTML</title>
+    <title>Mis Proyectos y Habilidades</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <a href="#habilidades">Habilidades</a>
         <a href="#cv" download>Descargar CV</a>
         <a href="https://www.linkedin.com/in/tu-nombre" target="_blank">LinkedIn</a>
-        <a href="https://github.com/tu-nombre" target="_blank">GitHub</a>
+        <a href="https://github.com/EdgarFuentes100" target="_blank">GitHub</a>
     </header>
 
     <!-- Sección principal con imagen de fondo -->
@@ -32,6 +32,22 @@
             <div>
                 <h2>Edgar Bernabe Fuentes Cortez</h2>
                 <p>edgarfuetes139@gmail.com</p>
+
+                <!-- Nuevo div para los íconos de contacto -->
+                <div class="social-icons">
+                    <a href="https://wa.me/tuNumeroDeTelefono" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:edgarfuetes139@gmail.com" target="_blank" title="Correo electrónico">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/EdgarFuentes100" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/edgarfuentes/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -50,31 +66,71 @@
     <div class="contenido-adicional" id="proyectos">
         <h2>Proyectos</h2>
         <div class="proyectos">
+            <!-- Proyecto 1 -->
             <div class="proyecto">
                 <img src="https://via.placeholder.com/300" alt="Imagen Proyecto 1">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto 1.</p>
+                <div class="proyecto-texto">
+                    <h3>Proyecto de Recursos Humanos</h3>
+                    <p><strong>Descripción:</strong> Proyecto para la gestión de recursos humanos, que permite manejar
+                        empleados, asistir a reportes, y más.</p>
+                    <!-- Tecnologías usadas -->
+                    <div class="tecnologias">
+                        <div class="tecnologia">
+                            <strong>Backend:</strong>
+                            <p>Node.js, Express.js</p>
+                            <a href="https://github.com/tuusuario/proyecto-backend" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <div class="tecnologia">
+                            <strong>Frontend:</strong>
+                            <p>HTML, CSS, JavaScript</p>
+                            <a href="https://github.com/tuusuario/proyecto-frontend" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <div class="tecnologia">
+                            <strong>Base de Datos:</strong>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                    <div class="iconos-tecnologias">
+                        <i class="fab fa-node-js" title="Node.js"></i>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fas fa-database" title="MySQL"></i>
+                    </div>
+                </div>
             </div>
 
+            <!-- Proyecto 2 -->
             <div class="proyecto">
                 <img src="https://via.placeholder.com/300" alt="Imagen Proyecto 2">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto 2.</p>
+                <div class="proyecto-texto">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto 2.</p>
+                </div>
             </div>
 
+            <!-- Proyecto 3 -->
             <div class="proyecto">
                 <img src="https://via.placeholder.com/300" alt="Imagen Proyecto 3">
-                <h3>Proyecto 3</h3>
-                <p>Descripción breve del proyecto 3.</p>
+                <div class="proyecto-texto">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto 3.</p>
+                </div>
             </div>
 
+            <!-- Proyecto 4 -->
             <div class="proyecto">
                 <img src="https://via.placeholder.com/300" alt="Imagen Proyecto 4">
-                <h3>Proyecto 4</h3>
-                <p>Descripción breve del proyecto 4.</p>
+                <div class="proyecto-texto">
+                    <h3>Proyecto 4</h3>
+                    <p>Descripción breve del proyecto 4.</p>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- Sección de habilidades -->
     <div class="contenido-adicional" id="habilidades">
         <h2>Habilidades</h2>
@@ -87,13 +143,15 @@
                     <h4>Desarrollo Web</h4>
                     <p>He desarrollado sitios web utilizando <strong>React.js</strong>, <strong>HTML5</strong>,
                         <strong>CSS3</strong>, <strong>Bootstrap</strong> y <strong>JavaScript</strong>. Me enfoco en
-                        crear interfaces que sean funcionales y fáciles de navegar.</p>
+                        crear interfaces que sean funcionales y fáciles de navegar.
+                    </p>
                 </div>
                 <div class="habilidad-item">
                     <h4>Desarrollo Móvil</h4>
                     <p>He trabajado en la creación de aplicaciones móviles usando <strong>Android Studio</strong>, con
                         <strong>Java</strong> y <strong>XML</strong>. Mi objetivo es crear aplicaciones móviles con un
-                        buen rendimiento y una interfaz intuitiva.</p>
+                        buen rendimiento y una interfaz intuitiva.
+                    </p>
                 </div>
                 <div class="habilidad-item">
                     <h4>Desarrollo de Aplicaciones de Escritorio</h4>
@@ -106,7 +164,8 @@
                     <p>He trabajado en la creación de APIs utilizando <strong>ASP.NET</strong> con <strong>C#</strong>
                         en <strong>Visual Studio</strong> y con <strong>Node.js</strong> y <strong>Express</strong> en
                         <strong>Visual Studio Code</strong>, para facilitar la comunicación entre diferentes
-                        aplicaciones.</p>
+                        aplicaciones.
+                    </p>
                 </div>
                 <div class="habilidad-item">
                     <h4>Gestión de Bases de Datos</h4>
@@ -118,7 +177,8 @@
                     <h4>Autenticación y Seguridad</h4>
                     <p>He implementado sistemas de autenticación utilizando <strong>OAuth2</strong> con
                         <strong>Google</strong> y <strong>Microsoft</strong>, para garantizar que solo usuarios
-                        autorizados accedan a las aplicaciones.</p>
+                        autorizados accedan a las aplicaciones.
+                    </p>
                 </div>
                 <!-- Habilidad Separada para Excel con VBA -->
                 <div class="habilidad-item">
