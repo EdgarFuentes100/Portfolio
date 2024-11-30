@@ -17,6 +17,10 @@ html {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     background-color: #333;
     color: white;
     text-align: center;
@@ -33,19 +37,103 @@ header a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 header a:hover {
     text-decoration: underline;
 }
 
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilo para los enlaces del menú */
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    transition: background 0.3s ease;
+}
+
+/* Estilo al pasar el mouse por encima */
+nav a:hover {
+    background-color: #555;
+}
+
+/* Estilos del ícono de menú hamburguesa */
+.menu-icon {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Ícono para cerrar el menú */
+.close-icon {
+    display: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    /* Menú oculto por defecto */
+    nav {
+        display: none;
+        /* El menú se oculta por defecto */
+        flex-direction: column;
+        /* El menú se vuelve vertical */
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 60px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        /* Mostrar el ícono de hamburguesa */
+    }
+
+    .close-icon {
+        display: block;
+        /* Mostrar el ícono de cerrar */
+    }
+
+    nav.show {
+        display: flex;
+        /* Mostrar el menú cuando se hace clic en el ícono de hamburguesa */
+    }
+
+    nav a {
+        color: white;
+        padding: 5px;
+    }
+}
+
 /* Agregamos scroll-margin-top para manejar el desplazamiento */
 #sobre_mi,
 #proyectos,
-#inicio,
 #habilidades {
     scroll-margin-top: 100px;
+}
+
+#inicio {
+    scroll-margin-top: 200px;
 }
 
 section {

@@ -115,3 +115,26 @@ habilidadesLink.addEventListener('click', (e) => {
 window.addEventListener('load', function () {
     activarAnimacionHabilidades();
 });
+
+// Script para manjeta el nav de la vista en moviles
+const menuIcon = document.getElementById('menu-icon');
+const menu = document.getElementById('menu');
+const closeIcon = document.getElementById('close-icon');
+const menuLinks = document.querySelectorAll('nav a'); // Obtener todos los enlaces del menú
+
+// Función para mostrar/ocultar el menú al hacer clic en el ícono de hamburguesa
+menuIcon.addEventListener('click', function () {
+    menu.classList.add('show'); // Mostrar el menú
+});
+
+// Función para cerrar el menú al hacer clic en el ícono de cierre
+closeIcon.addEventListener('click', function () {
+    menu.classList.remove('show'); // Ocultar el menú
+});
+
+// Función para cerrar el menú al hacer clic en cualquier enlace
+menuLinks.forEach(link => {
+    link.addEventListener('click', function () {
+        menu.classList.remove('show'); // El menú se cierra cuando se hace clic en un enlace
+    });
+});
