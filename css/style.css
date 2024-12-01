@@ -386,9 +386,6 @@ footer {
     line-height: 1.6;
 }
 
-
-
-
 /* Estilo base para la grilla de habilidades */
 .habilidades-grid {
     display: grid;
@@ -537,7 +534,15 @@ footer {
         align-items: center;
         text-align: center;
         width: 100%;
-        margin: 10px 0;
+        margin: 0px 0;
+    }
+
+    .nueva-seccion p {
+        font-size: 1rem;
+    }
+
+    .nueva-seccion {
+        margin-top: 4px;
     }
 
     .seccion-adicional {
@@ -615,11 +620,5 @@ footer {
 
     .proyecto p {
         font-size: 0.9rem;
-    }
-
-    .contenido-adicional,
-    .nueva-seccion {
-        margin-left: 5%;
-        margin-right: 5%;
     }
 }
