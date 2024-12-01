@@ -313,13 +313,43 @@ h1 {
     opacity: 0.8;
     color: #000;
 }
+.iconos-tecnologias .fa-code {
+    color: #F8981D; /* Naranja para Java */
+}
+.iconos-tecnologias .fa-bootstrap {
+    color: #563D7C; /* Morado para Bootstrap */
+}
 
+.iconos-tecnologias .fa-cogs {
+    color: #61C5FF; /* Azul claro para Express.js */
+}
+
+.iconos-tecnologias .fa-file-code {
+    color: #E44D26; /* Rojo para XML (similar a color de código) */
+}
 .iconos-tecnologias .fa-node-js {
     color: #8CC84B;
 }
 
 .iconos-tecnologias .fa-js-square {
     color: #F7DF1E;
+}
+.iconos-tecnologias .fa-microsoft {
+    color: #217346; /* Verde de Excel */
+}
+
+/* Estilo para el ícono de VBA (código) */
+.iconos-tecnologias .fa-code {
+    color: #00A9E0; /* Azul similar al de VBA */
+}.iconos-tecnologias .fa-window-restore {
+    color: #0A74DA; /* Azul para representar UserForm (interfaz de usuario) */
+}
+.iconos-tecnologias .fa-microsoft {
+    color: #5C2D91; /* C# relacionado con el logo de Microsoft */
+}
+
+.iconos-tecnologias .fa-windows {
+    color: #00A4EF; /* Azul para Windows Forms */
 }
 
 .iconos-tecnologias .fa-html5 {
@@ -361,6 +391,7 @@ footer {
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 15px;
+    width: 300px;
 }
 
 .nueva-seccion p {
