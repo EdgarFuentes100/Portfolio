@@ -412,7 +412,7 @@ footer {
     .contenido-adicional,
     .nueva-seccion {
         margin-left: 5%;
-        margin-right: 5%;
+        margin-right: 3%;
     }
 }
 
@@ -441,7 +441,14 @@ footer {
     /* Para incluir el padding dentro del ancho */
 }
 
-/* Ajustes específicos para pantallas pequeñas */
+/* Agregar algunas transiciones para los efectos de hover */
+.habilidad-item:hover {
+    transform: scale(1.05);
+    /* Aumentar ligeramente el tamaño cuando se pasa el cursor sobre el elemento */
+    transition: transform 0.3s ease;
+}
+
+
 @media (max-width: 768px) {
     .habilidades-grid {
         grid-template-columns: 1fr;
@@ -454,27 +461,6 @@ footer {
     .habilidad-item {
         padding: 10px;
         /* Reducir el padding para mejorar el uso del espacio */
-    }
-}
-
-/* Agregar un poco de margen en la parte inferior de la sección de habilidades */
-.habilidades-tecnicas {
-    margin-bottom: 40px;
-    /* Ajuste el margen inferior */
-}
-
-/* Agregar algunas transiciones para los efectos de hover */
-.habilidad-item:hover {
-    transform: scale(1.05);
-    /* Aumentar ligeramente el tamaño cuando se pasa el cursor sobre el elemento */
-    transition: transform 0.3s ease;
-}
-
-
-@media (max-width: 768px) {
-    .habilidades-grid {
-        grid-template-columns: 1fr;
-        /* Asegura que solo haya una columna en pantallas pequeñas */
     }
 
     .contenido-adicional,
@@ -558,24 +544,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Disposición de las habilidades técnicas en una grilla */
-/* Estilos para la grilla de habilidades */
-.habilidades-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* Esto hará que las columnas sean flexibles, ocupando el espacio disponible */
-    gap: 20px;
-}
-
-/* Estilo de cada habilidad técnica (cuadro) */
-.habilidad-item {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
 
 .habilidad-item h4 {
     font-size: 1.3em;
