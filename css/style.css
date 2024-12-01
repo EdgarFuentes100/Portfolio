@@ -104,7 +104,7 @@ section {
     position: relative;
 }
 
-h1 {
+section h1 {
     position: relative;
     top: -30px;
 }
@@ -177,9 +177,12 @@ h1 {
     text-align: left;
 }
 
-.contenido-adicional h2 {
-    margin-top: 0;
-    font-size: 2rem;
+#habilidades h2,
+#proyectos h2 {
+    font-size: 1.7em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .proyectos {
@@ -236,6 +239,7 @@ h1 {
     word-wrap: break-word;
 }
 
+
 .tecnologias {
     margin-top: 10px;
     font-size: 16px;
@@ -274,9 +278,15 @@ h1 {
     color: #000;
 }
 
-.iconos-tecnologias .fa-code {
-    color: #F8981D;
-    /* Naranja para Java */
+/* Cambiar color de los íconos de Java y Android */
+.iconos-tecnologias .fab.fa-java {
+    color: #FF5722;
+    /* Un color naranja para el ícono de Java */
+}
+
+.iconos-tecnologias .fab.fa-android {
+    color: #3DDC84;
+    /* Un color verde para el ícono de Android */
 }
 
 .iconos-tecnologias .fa-bootstrap {
@@ -364,7 +374,7 @@ footer {
 }
 
 .nueva-seccion h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: #333;
     margin-bottom: 15px;
     width: 300px;
@@ -376,52 +386,8 @@ footer {
     line-height: 1.6;
 }
 
-.redes {
-    margin-top: 10px;
-    font-size: 1.5rem;
-}
 
-.redes a {
-    color: #333;
-    margin-right: 20px;
-    font-size: 2rem;
-    transition: color 0.3s;
-}
 
-.redes a:hover {
-    color: #0066cc;
-}
-
-@media (max-width: 1024px) {
-    .proyectos {
-        grid-template-columns: 1fr;
-    }
-
-    .proyecto {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .proyecto img {
-        width: 80%;
-        margin-bottom: 15px;
-    }
-
-    .proyecto h3 {
-        font-size: 1.2rem;
-    }
-
-    .proyecto p {
-        font-size: 0.9rem;
-    }
-
-    .contenido-adicional,
-    .nueva-seccion {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
 
 /* Estilo base para la grilla de habilidades */
 .habilidades-grid {
@@ -455,6 +421,62 @@ footer {
     transition: transform 0.3s ease;
 }
 
+/* Estilo para la sección de habilidades */
+#habilidades {
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+/* Estilos para las habilidades técnicas */
+.habilidades-tecnicas {
+    margin-bottom: 40px;
+}
+
+.habilidades-tecnicas h3,
+.habilidades-blandas h3 {
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+.habilidad-item h4,
+.habilidad-blanda h4 {
+    font-size: 1.3em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.habilidad-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.habilidades-blandas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.habilidad-blanda {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Para que ocupe todo el ancho */
+    display: flex;
+    flex-direction: column;
+}
+
+.habilidad-blanda p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #555;
+}
 
 @media (max-width: 768px) {
 
@@ -561,10 +583,6 @@ footer {
         font-size: 0.9rem;
     }
 
-    .habilidad-blanda h3 {
-        font-size: 1.5rem;
-    }
-
     .habilidad-item {
         font-size: 0.9rem;
     }
@@ -574,70 +592,34 @@ footer {
     }
 }
 
-/* Estilo para la sección de habilidades */
-#habilidades {
-    padding: 30px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    margin-top: 30px;
-}
 
-#habilidades h2 {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
+@media (max-width: 1024px) {
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
 
-/* Estilos para las habilidades técnicas */
-.habilidades-tecnicas {
-    margin-bottom: 40px;
-}
+    .proyecto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.habilidades-tecnicas h3, .habilidades-blandas {
-    font-size: 1.5em;
-    color: #444;
-    margin-bottom: 20px;
-}
+    .proyecto img {
+        width: 80%;
+        margin-bottom: 15px;
+    }
 
+    .proyecto h3 {
+        font-size: 1.2rem;
+    }
 
-.habilidad-item h4 {
-    font-size: 1.3em;
-    color: #333;
-    margin-bottom: 10px;
-}
+    .proyecto p {
+        font-size: 0.9rem;
+    }
 
-.habilidad-item p {
-    font-size: 1em;
-    color: #555;
-}
-
-.habilidades-blandas {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.habilidad-blanda {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    /* Para que ocupe todo el ancho */
-    display: flex;
-    flex-direction: column;
-}
-
-.habilidad-blanda h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.habilidad-blanda p {
-    margin: 10px 0 0;
-    font-size: 1rem;
-    color: #555;
+    .contenido-adicional,
+    .nueva-seccion {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
