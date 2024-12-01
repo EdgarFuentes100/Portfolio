@@ -412,7 +412,7 @@ footer {
     .contenido-adicional,
     .nueva-seccion {
         margin-left: 5%;
-        margin-right: 6%;
+        margin-right: 5%;
     }
 }
 
@@ -515,6 +515,9 @@ footer {
 
     .tecnologias {
         margin-left: 0;
+    }
+    .nueva-seccion h2{
+        font-size: 1.5rem;
     }
 }
 
