@@ -84,46 +84,6 @@ nav a:hover {
     right: 20px;
 }
 
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-
-    /* Menú oculto por defecto */
-    nav {
-        display: none;
-        /* El menú se oculta por defecto */
-        flex-direction: column;
-        /* El menú se vuelve vertical */
-        background-color: #333;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding-top: 60px;
-        z-index: 1000;
-        text-align: center;
-    }
-
-    .menu-icon {
-        display: block;
-        /* Mostrar el ícono de hamburguesa */
-    }
-
-    .close-icon {
-        display: block;
-        /* Mostrar el ícono de cerrar */
-    }
-
-    nav.show {
-        display: flex;
-        /* Mostrar el menú cuando se hace clic en el ícono de hamburguesa */
-    }
-
-    nav a {
-        color: white;
-        padding: 5px;
-    }
-}
-
 /* Agregamos scroll-margin-top para manejar el desplazamiento */
 #sobre_mi,
 #proyectos,
@@ -313,20 +273,27 @@ h1 {
     opacity: 0.8;
     color: #000;
 }
+
 .iconos-tecnologias .fa-code {
-    color: #F8981D; /* Naranja para Java */
+    color: #F8981D;
+    /* Naranja para Java */
 }
+
 .iconos-tecnologias .fa-bootstrap {
-    color: #563D7C; /* Morado para Bootstrap */
+    color: #563D7C;
+    /* Morado para Bootstrap */
 }
 
 .iconos-tecnologias .fa-cogs {
-    color: #61C5FF; /* Azul claro para Express.js */
+    color: #61C5FF;
+    /* Azul claro para Express.js */
 }
 
 .iconos-tecnologias .fa-file-code {
-    color: #E44D26; /* Rojo para XML (similar a color de código) */
+    color: #E44D26;
+    /* Rojo para XML (similar a color de código) */
 }
+
 .iconos-tecnologias .fa-node-js {
     color: #8CC84B;
 }
@@ -334,22 +301,31 @@ h1 {
 .iconos-tecnologias .fa-js-square {
     color: #F7DF1E;
 }
+
 .iconos-tecnologias .fa-microsoft {
-    color: #217346; /* Verde de Excel */
+    color: #217346;
+    /* Verde de Excel */
 }
 
 /* Estilo para el ícono de VBA (código) */
 .iconos-tecnologias .fa-code {
-    color: #00A9E0; /* Azul similar al de VBA */
-}.iconos-tecnologias .fa-window-restore {
-    color: #0A74DA; /* Azul para representar UserForm (interfaz de usuario) */
+    color: #00A9E0;
+    /* Azul similar al de VBA */
 }
+
+.iconos-tecnologias .fa-window-restore {
+    color: #0A74DA;
+    /* Azul para representar UserForm (interfaz de usuario) */
+}
+
 .iconos-tecnologias .fa-microsoft {
-    color: #5C2D91; /* C# relacionado con el logo de Microsoft */
+    color: #5C2D91;
+    /* C# relacionado con el logo de Microsoft */
 }
 
 .iconos-tecnologias .fa-windows {
-    color: #00A4EF; /* Azul para Windows Forms */
+    color: #00A4EF;
+    /* Azul para Windows Forms */
 }
 
 .iconos-tecnologias .fa-html5 {
@@ -481,6 +457,43 @@ footer {
 
 
 @media (max-width: 768px) {
+
+    /* Menú oculto por defecto */
+    nav {
+        display: none;
+        /* El menú se oculta por defecto */
+        flex-direction: column;
+        /* El menú se vuelve vertical */
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 40px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        /* Mostrar el ícono de hamburguesa */
+    }
+
+    .close-icon {
+        display: block;
+        /* Mostrar el ícono de cerrar */
+    }
+
+    nav.show {
+        display: flex;
+        /* Mostrar el menú cuando se hace clic en el ícono de hamburguesa */
+    }
+
+    nav a {
+        color: white;
+        padding: 5px;
+    }
+
     .habilidades-grid {
         grid-template-columns: 1fr;
         /* En pantallas pequeñas, una sola columna */
@@ -544,16 +557,18 @@ footer {
         font-size: 0.9rem;
     }
 
-    .habilidad-blanda p{
+    .habilidad-blanda p {
         font-size: 0.9rem;
     }
-    .habilidad-blanda h3{
+
+    .habilidad-blanda h3 {
         font-size: 1.5rem;
     }
 
-    .habilidad-item{
+    .habilidad-item {
         font-size: 0.9rem;
     }
+
     .tecnologias {
         margin-left: 0;
     }
@@ -579,7 +594,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.habilidades-tecnicas h3 {
+.habilidades-tecnicas h3, .habilidades-blandas {
     font-size: 1.5em;
     color: #444;
     margin-bottom: 20px;
@@ -601,12 +616,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.habilidades-blandas h3 {
-    font-size: 1.5em;
-    color: #444;
-    margin-bottom: 20px;
 }
 
 .habilidad-blanda {
