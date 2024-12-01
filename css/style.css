@@ -544,11 +544,21 @@ footer {
         font-size: 0.9rem;
     }
 
+    .habilidad-blanda p{
+        font-size: 0.9rem;
+    }
+    .habilidad-blanda h3{
+        font-size: 1.5rem;
+    }
+    .habilidad-item h4{
+        font-size: 1.4rem;
+    }
+
+    .habilidad-item{
+        font-size: 0.9rem;
+    }
     .tecnologias {
         margin-left: 0;
-    }
-    .nueva-seccion h2{
-        font-size: 1.5rem;
     }
 }
 
