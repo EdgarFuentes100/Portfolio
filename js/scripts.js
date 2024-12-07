@@ -138,3 +138,29 @@ menuLinks.forEach(link => {
         menu.classList.remove('show'); // El menú se cierra cuando se hace clic en un enlace
     });
 });
+
+// Obtén el modal
+var modal = document.getElementById("myModal");
+
+// Obtén el texto "Demo"
+var demoText = document.getElementById("demo");
+
+// Obtén el botón de cerrar
+var closeModal = document.getElementById("closeModal");
+
+// Cuando el usuario hace clic en "Demo", abre el modal
+demoText.onclick = function () {
+    modal.style.display = "block";
+}
+
+// Cuando el usuario hace clic en el botón de cerrar, cierra el modal
+closeModal.onclick = function () {
+    modal.style.display = "none";
+}
+
+// Cuando el usuario hace clic fuera del modal, también lo cierra
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

@@ -64,12 +64,65 @@
     </section>
 
     <!-- Nueva sección -->
-    <div class="nueva-seccion" id="sobre_mi">
-        <h2>Sobre mí</h2>
-        <p>Soy un programador apasionado por la tecnología y la creación de soluciones digitales. Tengo experiencia en
-            el desarrollo de aplicaciones y sitios web, buscando siempre mejorar la experiencia del usuario y ofrecer
-            soluciones eficientes. Me encanta aprender nuevas herramientas y enfrentar desafíos que me permitan seguir
-            creciendo profesionalmente.</p>
+    <div class="contenedor-flex">
+        <div class="nueva-seccion" id="sobre_mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un programador apasionado por la tecnología y la creación de soluciones digitales. Tengo experiencia
+                en
+                el desarrollo de aplicaciones y sitios web, buscando siempre mejorar la experiencia del usuario y
+                ofrecer
+                soluciones eficientes. Me encanta aprender nuevas herramientas y enfrentar desafíos que me permitan
+                seguir
+                creciendo profesionalmente.</p>
+        </div>
+        <div id="demo">
+            <h2>Demo</h2> <!-- Contenedor de iconos -->
+            <div class="iconos-container">
+                <!-- Iconos -->
+                <div class="icono">🔧</div>
+                <div class="icono">⚙️</div>
+                <div class="icono">🔌</div>
+                <div class="icono">💻</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- El Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>¡Bienvenido a ver mis demos!</h2>
+
+            <!-- Contenedor de los proyectos -->
+            <div class="proyectosModal-container">
+                <!-- Proyecto 1 -->
+                <div class="proyectoModal"
+                    onclick="window.location.href='https://edgarfuentes100.github.io/AnimeExplorer/'">
+                    <img src="img/animeExplorer.PNG" alt="Proyecto 1">
+                    <h3>AnimeExplorer</h3>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyectoModal"
+                    onclick="window.location.href='https://edgarfuentes100.github.io/CurriculumEditor/'">
+                    <img src="img/curriculumEditor.PNG" alt="Proyecto 2">
+                    <h3>CurriculumEditor</h3>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyectoModal"
+                    onclick="window.location.href='https://edgarfuentes100.github.io/SimpleSite/'">
+                    <img src="https://via.placeholder.com/200x250" alt="Proyecto 3">
+                    <h3>SimpleSite</h3>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="proyectoModal" onclick="window.location.href='https://www.proyecto1.com'">
+                    <img src="https://via.placeholder.com/200x250" alt="Proyecto 4">
+                    <h3>Proyecto 4</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Sección de proyectos -->

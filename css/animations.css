@@ -32,7 +32,7 @@
 }
 
 /* Estilo para la sección adicional (entra desde la izquierda) */
-.nueva-seccion.animado {
+.nueva-seccion.animado, #demo {
     animation: slideLeft 1.5s ease-out forwards;
 }
 
