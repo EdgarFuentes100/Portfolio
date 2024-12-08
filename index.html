@@ -63,66 +63,15 @@
         </div>
     </section>
 
-    <!-- Nueva sección -->
-    <div class="contenedor-flex">
-        <div class="nueva-seccion" id="sobre_mi">
-            <h2>Sobre mí</h2>
-            <p>Soy un programador apasionado por la tecnología y la creación de soluciones digitales. Tengo experiencia
-                en
-                el desarrollo de aplicaciones y sitios web, buscando siempre mejorar la experiencia del usuario y
-                ofrecer
-                soluciones eficientes. Me encanta aprender nuevas herramientas y enfrentar desafíos que me permitan
-                seguir
-                creciendo profesionalmente.</p>
-        </div>
-        <div id="demo">
-            <h2>Demo</h2> <!-- Contenedor de iconos -->
-            <div class="iconos-container">
-                <!-- Iconos -->
-                <div class="icono">🔧</div>
-                <div class="icono">⚙️</div>
-                <div class="icono">🔌</div>
-                <div class="icono">💻</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- El Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <h2>¡Bienvenido a ver mis demos!</h2>
-
-            <!-- Contenedor de los proyectos -->
-            <div class="proyectosModal-container">
-                <!-- Proyecto 1 -->
-                <div class="proyectoModal"
-                    onclick="window.location.href='https://edgarfuentes100.github.io/AnimeExplorer/'">
-                    <img src="img/animeExplorer.PNG" alt="Proyecto 1">
-                    <h3>AnimeExplorer</h3>
-                </div>
-
-                <!-- Proyecto 2 -->
-                <div class="proyectoModal"
-                    onclick="window.location.href='https://edgarfuentes100.github.io/CurriculumEditor/'">
-                    <img src="img/curriculumEditor.PNG" alt="Proyecto 2">
-                    <h3>CurriculumEditor</h3>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="proyectoModal"
-                    onclick="window.location.href='https://edgarfuentes100.github.io/SimpleSite/'">
-                    <img src="https://via.placeholder.com/200x250" alt="Proyecto 3">
-                    <h3>SimpleSite</h3>
-                </div>
-
-                <!-- Proyecto 4 -->
-                <div class="proyectoModal" onclick="window.location.href='https://www.proyecto1.com'">
-                    <img src="https://via.placeholder.com/200x250" alt="Proyecto 4">
-                    <h3>Proyecto 4</h3>
-                </div>
-            </div>
-        </div>
+    <div class="nueva-seccion" id="sobre_mi">
+        <h2>Sobre mí</h2>
+        <p>Soy un programador apasionado por la tecnología y la creación de soluciones digitales. Tengo experiencia
+            en
+            el desarrollo de aplicaciones y sitios web, buscando siempre mejorar la experiencia del usuario y
+            ofrecer
+            soluciones eficientes. Me encanta aprender nuevas herramientas y enfrentar desafíos que me permitan
+            seguir
+            creciendo profesionalmente.</p>
     </div>
 
     <!-- Sección de proyectos -->
@@ -130,6 +79,98 @@
         <h2>Proyectos</h2>
         <div class="proyectos">
             <!-- Proyecto 1 -->
+            <div class="proyecto">
+                <img src="img/animeExplorer.PNG" alt="Imagen Proyecto Anime Explorer">
+                <div class="proyecto-texto">
+                    <h3>Anime Explorer</h3>
+                    <p><strong>Descripción:</strong> Anime Explorer es una aplicación web que permite consultar animes
+                        populares y buscar por nombre. Utilizando la API de Jikan, los usuarios pueden explorar animes
+                        más vistos, aquellos que están en emisión en tiempo real y filtrarlos por género. Además, la
+                        aplicación ofrece una sección para consultar los animes emitidos en temporadas pasadas,
+                        permitiendo a los usuarios conocer qué animes fueron emitidos en cada temporada.</p>
+
+                    <!-- Tecnologías usadas -->
+                    <div class="tecnologias">
+                        <div class="tecnologia">
+                            <strong>Frontend:</strong>
+                            <p>HTML, CSS, JavaScript</p>
+                            <a href="https://github.com/EdgarFuentes100/AnimeExplorer.git" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <div class="tecnologia">
+                            <strong>Backend:</strong>
+                            <p>API (Jikan)</p>
+                        </div>
+                        <div class="tecnologia">
+                            <strong>Base de Datos:</strong>
+                            <p>API externa para consultar datos de animes</p>
+                        </div>
+                    </div>
+
+                    <!-- Íconos de tecnologías -->
+                    <div class="iconos-tecnologias">
+                        <i class="fab fa-html5" title="HTML5"></i> <!-- Ícono de HTML -->
+                        <i class="fab fa-css3-alt" title="CSS3"></i> <!-- Ícono de CSS -->
+                        <i class="fab fa-js" title="JavaScript"></i> <!-- Ícono de JS -->
+                        <i class="fas fa-cloud" title="API Jikan (Consulta Anime)"></i> <!-- Ícono de la API -->
+                    </div>
+
+                    <div class="cuadro-flotante" id="activo">
+                        <a href="https://edgarfuentes100.github.io/AnimeExplorer/" target="_blank"
+                            class="activo-enlace">
+                            <div class="cuadro-azul">
+                                <span class="punto-azul"></span>
+                                <span class="texto-hover">Ver demo</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/curriculumEditor.PNG" alt="Imagen Proyecto Curriculum Editor">
+                <div class="proyecto-texto">
+                    <h3>Curriculum Editor</h3>
+                    <p><strong>Descripción:</strong> Curriculum Editor es una aplicación web diseñada para ayudar a los
+                        usuarios a crear su currículum vitae (CV) personalizado. Utilizando plantillas predefinidas, los
+                        usuarios pueden fácilmente crear un CV, modificar el tipo de letra, tamaño de la fuente, usar
+                        negritas y otros estilos. La aplicación también permite a los usuarios descargar su CV en
+                        formato PDF.</p>
+
+                    <!-- Tecnologías usadas -->
+                    <div class="tecnologias">
+                        <div class="tecnologia">
+                            <strong>Frontend:</strong>
+                            <p>HTML, CSS, JavaScript, Tailwind CSS</p>
+                            <a href="https://github.com/EdgarFuentes100/CurriculumEditor" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                        <div class="tecnologia">
+                            <strong>Backend:</strong>
+                            <p>No utiliza backend, todo el procesamiento se hace en el cliente</p>
+                        </div>
+                    </div>
+
+                    <!-- Íconos de tecnologías -->
+                    <div class="iconos-tecnologias">
+                        <i class="fab fa-html5" title="HTML5"></i> <!-- Ícono de HTML -->
+                        <i class="fab fa-css3-alt" title="CSS3"></i> <!-- Ícono de CSS -->
+                        <i class="fab fa-js" title="JavaScript"></i> <!-- Ícono de JS -->
+                        <i class="fab fa-tailwindcss" title="Tailwind CSS"></i> <!-- Ícono de Tailwind CSS -->
+                        <i class="fas fa-file-pdf" title="Generación PDF"></i> <!-- Ícono de PDF -->
+                    </div>
+
+                    <div class="cuadro-flotante" id="activo">
+                        <a href="https://edgarfuentes100.github.io/CurriculumEditor/" target="_blank"
+                            class="activo-enlace">
+                            <div class="cuadro-azul">
+                                <span class="punto-azul"></span>
+                                <span class="texto-hover">Ver demo</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <div class="proyecto">
                 <img src="https://via.placeholder.com/300" alt="Imagen Proyecto 1">
                 <div class="proyecto-texto">
@@ -165,6 +206,15 @@
                         <i class="fab fa-node-js" title="Node.js"></i>
                         <i class="fas fa-cogs" title="Express.js"></i> <!-- Ícono genérico para Express.js -->
                         <i class="fas fa-database" title="MySQL"></i>
+                    </div>
+                    <div class="cuadro-flotante">
+                        <a href="mailto:edgarfuentes139@gmail.com?subject=Interés%20en%20tu%20proyecto&body=Hola,%20me%20encantó%20tu%20proyecto.%20¿Podrías%20darme%20más%20información?"
+                            target="_blank" class="activo-enlace">
+                            <div class="cuadro-azul">
+                                <span class="punto-azul"></span>
+                                <span class="texto-hover">Enviar Correo</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -209,12 +259,21 @@
                         <i class="fas fa-cogs" title="Express.js"></i> <!-- Ícono genérico para Express.js -->
                         <i class="fas fa-database" title="MySQL"></i>
                     </div>
+                    <div class="cuadro-flotante">
+                        <a href="mailto:edgarfuentes139@gmail.com?subject=Interés%20en%20tu%20proyecto&body=Hola,%20me%20encantó%20tu%20proyecto.%20¿Podrías%20darme%20más%20información?"
+                            target="_blank" class="activo-enlace">
+                            <div class="cuadro-azul">
+                                <span class="punto-azul"></span>
+                                <span class="texto-hover">Enviar Correo</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Proyecto 3 -->
             <div class="proyecto">
-                <img src="https://via.placeholder.com/300" alt="Imagen Proyecto 1">
+                <img src="img/excel.PNG" alt="Imagen Proyecto 1">
                 <div class="proyecto-texto">
                     <h3>Gestión de Control Vehicular(App escriotio VBA)</h3>
                     <p><strong>Descripción:</strong> Este proyecto consiste en una aplicación de gestión de control
@@ -227,7 +286,7 @@
                         <div class="tecnologia">
                             <strong>Frontend:</strong>
                             <p>UserForm, VBA</p>
-                            <a href="https://github.com/tuusuario/proyecto-frontend" target="_blank"><i
+                            <a href="https://github.com/EdgarFuentes100/SistemaExcel" target="_blank"><i
                                     class="fab fa-github"></i></a>
                         </div>
                         <div class="tecnologia">
@@ -242,6 +301,15 @@
                         <i class="fab fa-microsoft" title="Microsoft Excel"></i> <!-- Icono de Microsoft -->
                         <i class="fas fa-code" title="VBA"></i> <!-- Ícono genérico para código -->
                         <i class="fas fa-window-restore" title="UserForm (Interfaz VBA)"></i>
+                    </div>
+                    <div class="cuadro-flotante">
+                        <a href="mailto:edgarfuentes139@gmail.com?subject=Interés%20en%20tu%20proyecto&body=Hola,%20me%20encantó%20tu%20proyecto.%20¿Podrías%20darme%20más%20información?"
+                            target="_blank" class="activo-enlace">
+                            <div class="cuadro-azul">
+                                <span class="punto-azul"></span>
+                                <span class="texto-hover">Enviar Correo</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -283,6 +351,15 @@
                         <i class="fas fa-database" title="MySQL"></i> <!-- Ícono de base de datos -->
                         <i class="fas fa-windows" title="Windows Forms"></i> <!-- Ícono de Windows Forms -->
                     </div>
+                    <div class="cuadro-flotante">
+                        <a href="mailto:edgarfuentes139@gmail.com?subject=Interés%20en%20tu%20proyecto&body=Hola,%20me%20encantó%20tu%20proyecto.%20¿Podrías%20darme%20más%20información?"
+                            target="_blank" class="activo-enlace">
+                            <div class="cuadro-azul">
+                                <span class="punto-azul"></span>
+                                <span class="texto-hover">Enviar Correo</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -321,11 +398,18 @@
                         <i class="fas fa-database" title="MySQL"></i> <!-- Ícono de base de datos -->
                         <i class="fab fa-microsoft" title="C#"></i> <!-- Ícono de C# -->
                     </div>
+                    <div class="cuadro-flotante">
+                        <a href="mailto:edgarfuentes139@gmail.com?subject=Interés%20en%20tu%20proyecto&body=Hola,%20me%20encantó%20tu%20proyecto.%20¿Podrías%20darme%20más%20información?"
+                            target="_blank" class="activo-enlace">
+                            <div class="cuadro-azul">
+                                <span class="punto-azul"></span>
+                                <span class="texto-hover">Enviar Correo</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
     </div>
 
     <!-- Sección de habilidades -->

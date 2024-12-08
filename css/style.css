@@ -206,7 +206,7 @@ section h1 {
 }
 
 .proyecto img {
-    max-height: 60%;
+    max-height: 40%;
     max-width: 40%;
     height: auto;
     border-radius: 5px;
@@ -298,6 +298,13 @@ section h1 {
     color: #61C5FF;
     /* Azul claro para Express.js */
 }
+.iconos-tecnologias .fa-js {
+    color: #F7DF1E; /* Color de JavaScript */
+}
+
+.iconos-tecnologias .fa-file-pdf {
+    color: #FF4B4B; /* Color rojo para PDF */
+}
 
 .iconos-tecnologias .fa-file-code {
     color: #E44D26;
@@ -363,8 +370,7 @@ footer {
     margin-left: 150px;
 }
 
-.nueva-seccion,
-#demo {
+.nueva-seccion {
     padding: 15px;
     margin-top: 50px;
     display: flex;
@@ -377,170 +383,11 @@ footer {
     justify-content: flex-start;
 }
 
-#demo {
-    margin-left: 5px;
-    width: 8%;
-    align-items: center;
-    height: 8%;
-    cursor: pointer;
-    /* Cambia el cursor al pasar sobre el texto */
-    /* Ajusta este valor para pantallas más grandes */
-}
-
-/* Contenedor flex para permitir el salto de línea solo en pantallas pequeñas */
-.contenedor-flex {
-    display: flex;
-    flex-wrap: nowrap;
-    /* En pantallas grandes, no envolver (todos en la misma fila) */
-    gap: 20px;
-    /* Espacio entre los divs */
-}
-
 .nueva-seccion h2 {
     font-size: 1.7rem;
     color: #333;
     margin-bottom: 15px;
     width: 300px;
-}
-
-/* Estilos para el Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    animation: modal-open 0.5s ease-out;
-}
-
-.modal-content {
-    background-color: white;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 900px;
-    max-height: 80%;
-    overflow-y: auto;
-    /* Esto permite el scroll vertical */
-    animation: modal-content-open 0.5s ease-out;
-}
-
-.modal h2 {
-    margin-bottom: 10px;
-}
-
-/* Estilo para el botón de cerrar */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Contenedor para los proyectos */
-.proyectosModal-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 proyectos por fila */
-    gap: 20px;
-    padding-bottom: 20px;
-    /* Añadir espacio en la parte inferior */
-}
-
-/* Estilo para cada proyecto */
-.proyectoModal {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.proyectoModal img {
-    width: 350px;       /* Ancho del contenedor */
-    height: 200px;      /* Alto del contenedor */
-    object-fit: contain; /* La imagen se ajusta dentro del contenedor sin distorsionarse */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
-}
-
-
-.proyectoModal h3 {
-    font-size: 16px;
-    /* Ajusta el tamaño del texto */
-}
-
-/* Efecto hover */
-.proyectoModal:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Media Query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .proyectosModal-container {
-        grid-template-columns: 1fr;
-        /* 1 proyecto por fila en pantallas pequeñas */
-    }
-}
-
-/* Animaciones */
-@keyframes modal-open {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes modal-content-open {
-    from {
-        transform: scale(0);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-#demo h2 {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-/* Estilos para los iconos */
-.iconos-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 iconos por fila */
-    gap: 10px;
-    /* Espacio entre los iconos */
-}
-
-.icono {
-    text-align: center;
-    /* Ajusta el tamaño de los iconos */
-    background-color: #f0f0f0;
-    border-radius: 50%;
-    font-size: 15px;
-    border: 2px solid #d9d9d9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nueva-seccion p {
@@ -689,24 +536,12 @@ footer {
         /* Reducir el padding para mejorar el uso del espacio */
     }
 
-
-    .contenedor-flex {
-        flex-wrap: wrap;
-        /* Permite que los divs se acomoden en una nueva fila */
-    }
-
     .nueva-seccion,
-    #demo,
     .contenido-adicional {
         width: 100%;
         /* Los divs ocuparán todo el ancho disponible en pantallas pequeñas */
         margin-left: 0;
         /* Elimina el margen izquierdo */
-    }
-
-    /* Elimina el margen superior de #demo para mayor ajuste */
-    #demo {
-        margin-top: 20px;
     }
 
     .nueva-seccion p {
@@ -794,3 +629,83 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/*SECION PARA MOSTRAR EL ICNO DE ACTIVO*/
+.cuadro-flotante {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.activo-enlace {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.cuadro-azul {
+    background-color: white;
+    border: 2px solid #d9d9d9;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    width: auto;
+    height: auto;
+    min-width: 40px;
+    min-height: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#activo .cuadro-azul {
+    border-color: #d9d9d9;
+}
+
+#activo .cuadro-azul:hover {
+    transform: scale(1.2);
+    background-color: #b3e0ff;
+}
+
+.punto-azul {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#activo .punto-azul {
+    background-color: #1583f1;
+    transform: scale(1);
+}
+
+.cuadro-azul:not(#activo):hover .punto-azul {
+    transform: none;
+}
+
+.texto-hover {
+    display: none;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Mostrar el texto cuando se hace hover en el cuadro activo */
+#activo .cuadro-azul:hover .texto-hover {
+    display: block;
+}
+
+/*TERMANAAAA*/
