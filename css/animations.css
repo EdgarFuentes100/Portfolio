@@ -137,3 +137,6 @@
 .habilidades-tecnicas.visible .habilidad-item:nth-child(7) {
     transition-delay: 3.2s;
 }
+.habilidades-tecnicas.visible .habilidad-item:nth-child(8) {
+    transition-delay: 3.7s;
+}

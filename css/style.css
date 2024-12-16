@@ -46,7 +46,7 @@ header a:hover {
 /* Menú de navegación */
 nav {
     display: flex;
-    gap: 20px;
+    gap: 5px;
     justify-content: center;
     width: 100%;
 }
@@ -85,7 +85,8 @@ nav a:hover {
 /* Agregamos scroll-margin-top para manejar el desplazamiento */
 #sobre_mi,
 #proyectos,
-#habilidades {
+#habilidades,
+#formacion {
     scroll-margin-top: 100px;
 }
 
@@ -529,7 +530,12 @@ footer {
     /* Mantiene la relación de aspecto */
     display: block;
     margin: 0 auto;
-    /* Centra la imagen dentro del div */
+    transition: all 0.3s ease;
+}
+
+.diploma img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
