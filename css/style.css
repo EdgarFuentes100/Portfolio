@@ -10,10 +10,8 @@ html {
     background-color: #f4f4f4;
     height: 100vh;
     overflow-x: hidden;
-}
-
-html {
     scroll-behavior: smooth;
+
 }
 
 header {
@@ -178,7 +176,9 @@ section h1 {
 }
 
 #habilidades h2,
-#proyectos h2 {
+#formacion h2,
+#proyectos h2,
+.nueva-seccion h2 {
     font-size: 1.7em;
     color: #333;
     text-align: center;
@@ -232,13 +232,13 @@ section h1 {
     word-wrap: break-word;
 }
 
-.proyecto p {
+.proyecto p,
+.formacion-academica p {
     color: #666;
     font-size: 1rem;
     line-height: 1.6;
     word-wrap: break-word;
 }
-
 
 .tecnologias {
     margin-top: 10px;
@@ -298,12 +298,15 @@ section h1 {
     color: #61C5FF;
     /* Azul claro para Express.js */
 }
+
 .iconos-tecnologias .fa-js {
-    color: #F7DF1E; /* Color de JavaScript */
+    color: #F7DF1E;
+    /* Color de JavaScript */
 }
 
 .iconos-tecnologias .fa-file-pdf {
-    color: #FF4B4B; /* Color rojo para PDF */
+    color: #FF4B4B;
+    /* Color rojo para PDF */
 }
 
 .iconos-tecnologias .fa-file-code {
@@ -383,13 +386,6 @@ footer {
     justify-content: flex-start;
 }
 
-.nueva-seccion h2 {
-    font-size: 1.7rem;
-    color: #333;
-    margin-bottom: 15px;
-    width: 300px;
-}
-
 .nueva-seccion p {
     font-size: 1rem;
     color: #666;
@@ -448,9 +444,28 @@ footer {
     margin-bottom: 20px;
 }
 
+.formacion-academica em {
+    font-style: italic;
+    color: #777;
+}
+
+#formacion {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formacion-academica {
+    margin-bottom: 20px;
+}
 
 .habilidad-item h4,
-.habilidad-blanda h4 {
+.habilidad-blanda h4,
+#formacion h4 {
     font-size: 1.3em;
     color: #444;
     margin-bottom: 10px;
@@ -485,7 +500,42 @@ footer {
     color: #555;
 }
 
+.diplomas {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los diplomas se ajusten automáticamente */
+    justify-content: space-between;
+    /* Distribuye los diplomas con espacio entre ellos */
+    gap: 20px;
+    /* Espacio entre los diplomas */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+    text-align: center;
+    margin-top: 20px;
+    /* Espacio superior para los diplomas */
+}
+
+.diploma {
+    width: 22%;
+    /* Cada diploma ocupa el 22% del ancho de la fila */
+    margin-bottom: 20px;
+    /* Espacio entre los diplomas en diferentes filas */
+}
+
+.diploma img {
+    width: 100%;
+    /* La imagen ocupa todo el ancho disponible en el div */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen dentro del div */
+}
+
 @media (max-width: 768px) {
+    .diploma {
+        width: 100%;
+    }
 
     /* Menú oculto por defecto */
     nav {
