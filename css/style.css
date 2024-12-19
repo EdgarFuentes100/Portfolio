@@ -528,6 +528,7 @@ footer {
     #formacion h3,
     .proyecto h3 {
         font-size: 1.2rem;
+        text-align: center;
     }
 
     .habilidades-tecnicas h3,
@@ -540,7 +541,9 @@ footer {
     .proyecto p,
     .habilidad-blanda p,
     .habilidad-item p,
-    .nueva-seccion p {
+    .nueva-seccion p,
+    .seccion-adicional h2,
+    .seccion-adicional p {
         font-size: 0.9rem;
     }
 
