@@ -1,0 +1,81 @@
+/* Cambiar color de los íconos de Java y Android */
+.iconos-tecnologias .fab.fa-java {
+    color: #FF5722;
+    /* Un color naranja para el ícono de Java */
+}
+
+.iconos-tecnologias .fab.fa-android {
+    color: #3DDC84;
+    /* Un color verde para el ícono de Android */
+}
+
+.iconos-tecnologias .fa-bootstrap {
+    color: #563D7C;
+    /* Morado para Bootstrap */
+}
+
+.iconos-tecnologias .fa-cogs {
+    color: #61C5FF;
+    /* Azul claro para Express.js */
+}
+
+.iconos-tecnologias .fa-js {
+    color: #F7DF1E;
+    /* Color de JavaScript */
+}
+
+.iconos-tecnologias .fa-file-pdf {
+    color: #FF4B4B;
+    /* Color rojo para PDF */
+}
+
+.iconos-tecnologias .fa-file-code {
+    color: #E44D26;
+    /* Rojo para XML (similar a color de código) */
+}
+
+.iconos-tecnologias .fa-node-js {
+    color: #8CC84B;
+}
+
+.iconos-tecnologias .fa-js-square {
+    color: #F7DF1E;
+}
+
+.iconos-tecnologias .fa-microsoft {
+    color: #217346;
+    /* Verde de Excel */
+}
+
+/* Estilo para el ícono de VBA (código) */
+.iconos-tecnologias .fa-code {
+    color: #00A9E0;
+    /* Azul similar al de VBA */
+}
+
+.iconos-tecnologias .fa-window-restore {
+    color: #0A74DA;
+    /* Azul para representar UserForm (interfaz de usuario) */
+}
+
+.iconos-tecnologias .fa-microsoft {
+    color: #5C2D91;
+    /* C# relacionado con el logo de Microsoft */
+}
+
+.iconos-tecnologias .fa-windows {
+    color: #00A4EF;
+    /* Azul para Windows Forms */
+}
+
+.iconos-tecnologias .fa-html5 {
+    color: #E34F26;
+}
+
+.iconos-tecnologias .fa-css3-alt {
+    color: #2965F1;
+}
+
+.iconos-tecnologias .fa-database {
+    color: #00758F;
+}

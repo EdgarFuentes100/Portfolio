@@ -42,7 +42,6 @@ header a:hover {
     text-decoration: underline;
 }
 
-
 /* Menú de navegación */
 nav {
     display: flex;
@@ -178,8 +177,7 @@ section h1 {
 
 #habilidades h2,
 #formacion h2,
-#proyectos h2,
-.nueva-seccion h2 {
+#proyectos h2 {
     font-size: 1.7em;
     color: #333;
     text-align: center;
@@ -226,14 +224,8 @@ section h1 {
     text-overflow: ellipsis;
 }
 
-.proyecto h3 {
-    color: #333;
-    margin-top: 0;
-    font-size: 1.4rem;
-    word-wrap: break-word;
-}
-
 .proyecto p,
+.habilidad-item p,
 .formacion-academica p {
     color: #666;
     font-size: 1rem;
@@ -277,88 +269,6 @@ section h1 {
     transform: scale(1.3);
     opacity: 0.8;
     color: #000;
-}
-
-/* Cambiar color de los íconos de Java y Android */
-.iconos-tecnologias .fab.fa-java {
-    color: #FF5722;
-    /* Un color naranja para el ícono de Java */
-}
-
-.iconos-tecnologias .fab.fa-android {
-    color: #3DDC84;
-    /* Un color verde para el ícono de Android */
-}
-
-.iconos-tecnologias .fa-bootstrap {
-    color: #563D7C;
-    /* Morado para Bootstrap */
-}
-
-.iconos-tecnologias .fa-cogs {
-    color: #61C5FF;
-    /* Azul claro para Express.js */
-}
-
-.iconos-tecnologias .fa-js {
-    color: #F7DF1E;
-    /* Color de JavaScript */
-}
-
-.iconos-tecnologias .fa-file-pdf {
-    color: #FF4B4B;
-    /* Color rojo para PDF */
-}
-
-.iconos-tecnologias .fa-file-code {
-    color: #E44D26;
-    /* Rojo para XML (similar a color de código) */
-}
-
-.iconos-tecnologias .fa-node-js {
-    color: #8CC84B;
-}
-
-.iconos-tecnologias .fa-js-square {
-    color: #F7DF1E;
-}
-
-.iconos-tecnologias .fa-microsoft {
-    color: #217346;
-    /* Verde de Excel */
-}
-
-/* Estilo para el ícono de VBA (código) */
-.iconos-tecnologias .fa-code {
-    color: #00A9E0;
-    /* Azul similar al de VBA */
-}
-
-.iconos-tecnologias .fa-window-restore {
-    color: #0A74DA;
-    /* Azul para representar UserForm (interfaz de usuario) */
-}
-
-.iconos-tecnologias .fa-microsoft {
-    color: #5C2D91;
-    /* C# relacionado con el logo de Microsoft */
-}
-
-.iconos-tecnologias .fa-windows {
-    color: #00A4EF;
-    /* Azul para Windows Forms */
-}
-
-.iconos-tecnologias .fa-html5 {
-    color: #E34F26;
-}
-
-.iconos-tecnologias .fa-css3-alt {
-    color: #2965F1;
-}
-
-.iconos-tecnologias .fa-database {
-    color: #00758F;
 }
 
 footer {
@@ -439,10 +349,23 @@ footer {
 }
 
 .habilidades-tecnicas h3,
-.habilidades-blandas h3 {
+.habilidades-blandas h3,
+.nueva-seccion h3 {
     font-size: 1.5em;
     color: #000;
     margin-bottom: 20px;
+}
+
+.habilidad-item h3,
+.habilidad-blanda h3,
+#formacion h3,
+.proyecto h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+
 }
 
 .formacion-academica em {
@@ -462,19 +385,6 @@ footer {
 
 .formacion-academica {
     margin-bottom: 20px;
-}
-
-.habilidad-item h4,
-.habilidad-blanda h4,
-#formacion h4 {
-    font-size: 1.3em;
-    color: #444;
-    margin-bottom: 10px;
-}
-
-.habilidad-item p {
-    font-size: 1em;
-    color: #555;
 }
 
 .habilidades-blandas {
@@ -639,6 +549,9 @@ footer {
         margin-bottom: 15px;
     }
 
+    .habilidad-item h3,
+    .habilidad-blanda h3,
+    #formacion h3,
     .proyecto h3 {
         font-size: 1.2rem;
     }
