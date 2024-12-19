@@ -135,15 +135,6 @@ section h1 {
     color: #333;
 }
 
-.seccion-adicional h2 {
-    font-size: 1.2rem;
-}
-
-.seccion-adicional p {
-    font-size: 0.9rem;
-    color: #666;
-}
-
 .social-icons {
     margin-top: 10px;
     display: flex;
@@ -226,7 +217,10 @@ section h1 {
 
 .proyecto p,
 .habilidad-item p,
-.formacion-academica p {
+.habilidad-blanda p,
+.formacion-academica p,
+.nueva-seccion p,
+.seccion-adicional p {
     color: #666;
     font-size: 1rem;
     line-height: 1.6;
@@ -295,12 +289,6 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     justify-content: flex-start;
-}
-
-.nueva-seccion p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
 }
 
 /* Estilo base para la grilla de habilidades */
@@ -405,12 +393,6 @@ footer {
     flex-direction: column;
 }
 
-.habilidad-blanda p {
-    margin: 10px 0 0;
-    font-size: 1rem;
-    color: #555;
-}
-
 .diplomas {
     display: flex;
     flex-wrap: wrap;
@@ -469,14 +451,10 @@ footer {
         text-align: center;
     }
 
-    .menu-icon {
-        display: block;
-        /* Mostrar el ícono de hamburguesa */
-    }
-
+    .menu-icon,
     .close-icon {
         display: block;
-        /* Mostrar el ícono de cerrar */
+        /* Mostrar el ícono de hamburguesa */
     }
 
     nav.show {
@@ -508,10 +486,6 @@ footer {
         /* Los divs ocuparán todo el ancho disponible en pantallas pequeñas */
         margin-left: 0;
         /* Elimina el margen izquierdo */
-    }
-
-    .nueva-seccion p {
-        font-size: 1rem;
     }
 
     .nueva-seccion {
@@ -556,15 +530,17 @@ footer {
         font-size: 1.2rem;
     }
 
-    .proyecto p {
-        font-size: 0.9rem;
+    .habilidades-tecnicas h3,
+    .habilidades-blandas h3,
+    .nueva-seccion h3 {
+        font-size: 1.3em;
+        text-align: center;
     }
 
-    .habilidad-blanda p {
-        font-size: 0.9rem;
-    }
-
-    .habilidad-item {
+    .proyecto p,
+    .habilidad-blanda p,
+    .habilidad-item p,
+    .nueva-seccion p {
         font-size: 0.9rem;
     }
 
